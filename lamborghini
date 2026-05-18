@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lamborghini</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    /* MENU */
+
+    header{
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1{
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover{
+      color: gold;
+    }
+
+    /* INICIO */
+
+    .inicio{
+      text-align: center;
+      padding: 80px 20px;
+      background-image: url('https://www.notransito.com/wp-content/gallery/lamborghini-aventador-jurere/lamborghiniaventadorlp700-4010.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .inicio h2{
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .inicio p{
+      font-size: 20px;
+    }
+
+    /* CARROS */
+
+    .carros{
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .carros h2{
+      margin-bottom: 40px;
+      color: gold;
+    }
+
+    .cards{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card{
+      background-color: #222;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: scale(1.05);
+    }
+
+    .card img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3{
+      margin: 15px 0;
+      color: gold;
+    }
+
+    .card p{
+      padding: 0 15px 20px;
+    }
+
+    .card a{
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* SOBRE */
+
+    .sobre{
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    .sobre h2{
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .sobre p{
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    /* CONTATO */
+
+    .contato{
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contato h2{
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    footer{
+      background-color: black;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width: 768px){
+
+      .inicio h2{
+        font-size: 35px;
+      }
+
+      .cards{
+        flex-direction: column;
+        align-items: center;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+
+  <header>
+
+    <h1>Lamborghini</h1>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#carros">Carros</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+  </header>
+
+  <!-- INICIO -->
+
+  <section class="inicio" id="inicio">
+
+    <h2>Carros de Luxo</h2>
+
+    <p>
+      Conheça alguns dos carros mais famosos da Lamborghini.
+    </p>
+
+  </section>
+
+  <!-- CARROS -->
+
+  <section class="carros" id="carros">
+
+    <h2>Modelos</h2>
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+
+      <div class="card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Lamborghini_Aventador_Genf_2018.jpg">
+
+        <h3>Aventador</h3>
+
+        <p>
+          Superesportivo com motor V12 e alta velocidade.
+        </p>
+
+        <a href="aventador.html">Ver Mais</a>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Lamborghini_Huracan_Evo_Genf_2019_1Y7A5452.jpg">
+
+        <h3>Huracán</h3>
+
+        <p>
+          Modelo moderno com design esportivo.
+        </p>
+
+        <a href="huracan.html">Ver Mais</a>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="card">
+
+        <img src="https://www.topgear.com/sites/default/files/cars-car/image/2024/10/1-Lamborghini-Urus-SE-review-2024.jpg?w=1280&h=720">
+
+        <h3>Urus</h3>
+
+        <p>
+          SUV de luxo com potência e conforto.
+        </p>
+
+        <a href="urus.html">Ver Mais</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE -->
+
+  <section class="sobre" id="sobre">
+
+    <h2>Sobre a Lamborghini</h2>
+
+    <p>
+      A Lamborghini é uma marca italiana conhecida pelos seus
+      carros esportivos de luxo. A empresa produz veículos
+      rápidos, modernos e famosos no mundo inteiro.
+    </p>
+
+  </section>
+
+  <!-- CONTATO -->
+
+  <section class="contato" id="contato">
+
+    <h2>Contato</h2>
+
+    <p>Email: contato@lamborghini.com</p>
+
+    <p>Telefone: (47) 99999-9999</p>
+
+  </section>
+
+  <!-- RODAPÉ -->
+
+  <footer>
+
+    <p>Site desenvolvido para trabalho de HTML e CSS.</p>
+
+  </footer>
+
+</body>
+</html>
